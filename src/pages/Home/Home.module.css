@@ -1,0 +1,39 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.projectsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsHeader h2 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+
+.projectsHeader a {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-accent);
+  font-style: italic;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.contact h2 {
+  margin: 0 0 var(--spacing-md);
+  font-size: var(--font-size-lg);
+}

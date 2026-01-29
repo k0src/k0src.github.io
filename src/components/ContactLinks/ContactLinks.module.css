@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.container a {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-accent);
+  font-style: italic;
+  color: var(--color-text-primary);
+  text-decoration: underline;
+}
+
+.container a:hover {
+  opacity: 0.7;
+}
+
+.separator {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}

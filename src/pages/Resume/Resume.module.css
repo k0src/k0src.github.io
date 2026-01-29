@@ -1,0 +1,12 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.download {
+  margin-top: var(--spacing-xl);
+  align-self: flex-end;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-accent);
+  font-style: italic;
+}
