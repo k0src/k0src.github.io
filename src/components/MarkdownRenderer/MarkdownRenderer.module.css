@@ -110,3 +110,9 @@
 :global([data-theme="dark"]) .markdown :global(.hljs-built_in) {
   color: #7ee787;
 }
+
+@media (max-width: 768px) {
+  .markdown pre {
+    padding: var(--spacing-sm);
+  }
+}

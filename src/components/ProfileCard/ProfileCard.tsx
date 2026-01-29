@@ -6,11 +6,12 @@ export function ProfileCard() {
   return (
     <aside className={styles.card}>
       <img src={portrait} alt="Profile" className={styles.portrait} />
-      <h2 className={styles.name}>Koren Stalnaker</h2>
-      <p className={styles.subtitle}>
-        Computer Science Senior at the University of Houston
-      </p>
-      <ul className={styles.links}>
+      <div className={styles.info}>
+        <h2 className={styles.name}>Koren Stalnaker</h2>
+        <p className={styles.subtitle}>
+          Computer Science Senior at the University of Houston
+        </p>
+        <ul className={styles.links}>
         <li>
           <MapPin size={16} />
           <span>Houston, Texas</span>
@@ -45,7 +46,8 @@ export function ProfileCard() {
             cs.uh.edu
           </a>
         </li>
-      </ul>
+        </ul>
+      </div>
     </aside>
   );
 }

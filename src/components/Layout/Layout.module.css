@@ -20,3 +20,18 @@
     var(--spacing-lg);
   max-height: calc(100vh - var(--navbar-height));
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0 var(--spacing-md);
+    overflow-y: auto;
+    max-height: calc(100vh - var(--navbar-height));
+  }
+
+  .main {
+    max-height: none;
+    overflow-y: visible;
+    padding: 0 0 var(--spacing-2xl);
+  }
+}
