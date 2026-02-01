@@ -66,7 +66,7 @@ postMessage(result);
 Typst for Obsidian uses **PDFium** (Chrome's PDF viewer) to render the PDF in the DOM. Originally, I used PDF.js (Mozilla's PDF viewer) to render the PDF, however, at the scale the document is actually rendered at in Obsidian, I noticed some annoying aliasing and artifacting issues that made the text glyphs stick together and bunch up, making the text hard to read. Using PDFium seemed to fix this problem.
 
 > ![pdf example](https://i.imgur.com/8Aq3OiF.png)
-> _PDF.js vs. PDFium at the same zoom level_
+> _PDF.js vs. PDFium at the same zoom level (70%)_
 
 PDFium is initialized from the WASM binary, memory is allocated, and the PDF data from the Rust compiler is loaded. Each page is render to a canvas at a configurable DPI. During this process, text layers and link layers are created from the PDF, so that text is selectable and links can be clicked.
 
