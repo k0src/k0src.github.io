@@ -1,7 +1,9 @@
 ---
 title: Typst SSG
 date: 2026.01.05
-description: Full-stack music streaming application built with React, Node.js, and PostgreSQL.
+description: Static site generator that compiles Typst documents to PDF and renders them in a browser viewer.
+image: https://i.imgur.com/cKdnd2C.png
+github: https://github.com/k0src/Typst-SSG
 ---
 
 ## Typst SSG

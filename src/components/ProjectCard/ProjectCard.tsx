@@ -9,7 +9,6 @@ interface ProjectCardProps {
   description?: string;
   image?: string;
   github?: string;
-  compact?: boolean;
 }
 
 export function ProjectCard({
@@ -19,10 +18,9 @@ export function ProjectCard({
   description,
   image,
   github,
-  compact = false,
 }: ProjectCardProps) {
   return (
-    <div className={`${styles.card} ${compact ? styles.compact : ""}`}>
+    <div className={styles.card}>
       {image && <img src={image} alt={title} className={styles.image} />}
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
