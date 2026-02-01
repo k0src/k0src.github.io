@@ -68,7 +68,9 @@
 }
 
 .markdown hr {
-  color: var(--color-border);
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--spacing-lg) 0;
 }
 
 .markdown blockquote {
