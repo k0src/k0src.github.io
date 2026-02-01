@@ -67,6 +67,10 @@
   border: none;
 }
 
+.markdown hr {
+  color: var(--color-border);
+}
+
 .markdown :global(.katex-display) {
   margin: var(--spacing-md) 0;
   overflow-x: auto;

@@ -1,3 +1,5 @@
 ## About Me
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I’m a senior computer science major at the University of Houston focused on building full-stack applications and tools that integrate directly into everyday workflows. My work spans web development, portable high-performance web applications, database-backed systems, machine learning, and data analysis.
+
+Projects are built primarily with C, C++, C#, JavaScript/TypeScript, Python, SQL, and Rust, using technologies such as React, Node.js, WebAssembly, and browser APIs. I also work on audio software and digital signal processing, game development, and contributing to open-source software.

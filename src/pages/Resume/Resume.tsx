@@ -13,7 +13,7 @@ export function Resume() {
         download
         className={styles.download}
       >
-        download as pdf
+        download resume as pdf
       </a>
     </div>
   );
