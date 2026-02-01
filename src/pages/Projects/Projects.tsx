@@ -16,6 +16,8 @@ export function Projects() {
             title={project.title}
             date={project.date}
             description={project.description}
+            image={project.image}
+            github={project.github}
           />
         ))}
       </div>

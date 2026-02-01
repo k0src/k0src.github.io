@@ -71,6 +71,17 @@
   color: var(--color-border);
 }
 
+.markdown blockquote {
+  margin: 0 0 var(--spacing-md);
+  padding: 0 0 0 var(--spacing-md);
+  border-left: 0.3rem solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .markdown :global(.katex-display) {
   margin: var(--spacing-md) 0;
   overflow-x: auto;

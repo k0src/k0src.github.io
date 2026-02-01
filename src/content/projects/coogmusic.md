@@ -2,6 +2,8 @@
 title: CoogMusic
 date: 2025.11.08
 description: Full-stack music streaming application built with React, Node.js, and PostgreSQL.
+image: https://raw.githubusercontent.com/k0src/COSC-3380-Project/refs/heads/master/assets/homepage.png
+github: https://github.com/k0src/COSC-3380-Project
 ---
 
 ## CoogMusic

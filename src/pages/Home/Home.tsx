@@ -25,6 +25,9 @@ export function Home() {
               slug={project.slug}
               title={project.title}
               date={project.date}
+              image={project.image}
+              github={project.github}
+              compact
             />
           ))}
         </div>

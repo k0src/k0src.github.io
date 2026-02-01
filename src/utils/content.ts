@@ -9,6 +9,8 @@ export interface ProjectMeta {
   title: string;
   date: string;
   description: string;
+  image?: string;
+  github?: string;
 }
 
 export interface Project extends ProjectMeta {
@@ -28,6 +30,19 @@ const marked = new Marked(
 );
 
 function renderMath(text: string): string {
+  const codeBlocks: string[] = [];
+  const inlineCode: string[] = [];
+
+  text = text.replace(/```[\s\S]*?```/g, (match) => {
+    codeBlocks.push(match);
+    return `%%CODEBLOCK${codeBlocks.length - 1}%%`;
+  });
+
+  text = text.replace(/`[^`]+`/g, (match) => {
+    inlineCode.push(match);
+    return `%%INLINECODE${inlineCode.length - 1}%%`;
+  });
+
   text = text.replace(/\$\$([\s\S]+?)\$\$/g, (_, math) => {
     try {
       return katex.renderToString(math.trim(), {
@@ -49,6 +64,12 @@ function renderMath(text: string): string {
       return `<code>${math}</code>`;
     }
   });
+
+  text = text.replace(/%%CODEBLOCK(\d+)%%/g, (_, i) => codeBlocks[parseInt(i)]);
+  text = text.replace(
+    /%%INLINECODE(\d+)%%/g,
+    (_, i) => inlineCode[parseInt(i)],
+  );
 
   return text;
 }
@@ -101,6 +122,8 @@ export function getProjects(): ProjectMeta[] {
       title: (data.title as string) || "Untitled",
       date: (data.date as string) || "",
       description: (data.description as string) || "",
+      image: (data.image as string) || undefined,
+      github: (data.github as string) || undefined,
     });
   }
 
@@ -117,6 +140,8 @@ export function getProject(slug: string): Project | null {
         title: (data.title as string) || "Untitled",
         date: (data.date as string) || "",
         description: (data.description as string) || "",
+        image: (data.image as string) || undefined,
+        github: (data.github as string) || undefined,
         html,
       };
     }
